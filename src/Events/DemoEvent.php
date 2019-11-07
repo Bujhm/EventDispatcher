@@ -1,6 +1,5 @@
 <?php
 
-
 namespace EventDispatchers\Events;
 
 use Symfony\Component\EventDispatcher\Event;

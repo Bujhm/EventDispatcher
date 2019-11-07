@@ -12,9 +12,12 @@
   "require": {
     "symfony/event-dispatcher": "^4.3"
   },
+  "config": {
+    "vendor-dir": "vendor"
+  },
   "autoload": {
     "psr-4": {
-      "EventDispatchers\\": "src"
+      "EventDispatchers\\": "src/"
     },
     "classmap": [
       "src"
