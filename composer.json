@@ -1,0 +1,23 @@
+{
+  "name": "igor/event_dispatcher",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Igor",
+      "email": "ehuohe1y@mail.ru"
+    }
+  ],
+  "require": {
+    "symfony/event-dispatcher": "^4.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "EventDispatchers\\": "src"
+    },
+    "classmap": [
+      "src"
+    ]
+  }
+}
