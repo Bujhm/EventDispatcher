@@ -14,4 +14,4 @@ $subscriber = new DemoSubscriber();
 $dispatcher->addSubscriber($subscriber);
 
 // dispatch
-$dispatcher->dispatch(DemoEvent::NAME, new DemoEvent());
+$dispatcher->dispatch(new DemoEvent(), DemoEvent::NAME);

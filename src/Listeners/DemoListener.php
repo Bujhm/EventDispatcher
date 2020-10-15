@@ -6,7 +6,7 @@ use Symfony\Component\EventDispatcher\Event;
 
 class DemoListener
 {
-    public function onDemoEvent(Event $event)
+    public function onDemoEvent(Event $event): void
     {
         // fetch event information here
         echo "DemoListener is called!\n";

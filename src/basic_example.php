@@ -12,7 +12,7 @@ $dispatcher = new EventDispatcher();
 
 // register listener for the 'demo.event' event
 $listener = new DemoListener();
-$dispatcher->addListener('demo.event', array($listener, 'onDemoEvent'));
+$dispatcher->addListener('demo.event', [$listener, 'onDemoEvent']);
 
 // dispatch
-$dispatcher->dispatch(DemoEvent::NAME, new DemoEvent());
+$dispatcher->dispatch( new DemoEvent(), DemoEvent::NAME);
